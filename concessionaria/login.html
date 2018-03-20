@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link href="css/styleLogin.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+</head>
+
+<body>
+    <div id="form-container">
+        <div class="panel" id="form-box">
+            <form>
+                <h1 class="text-center">Login</h1>
+
+                <div class="form-group">
+                    <label class="sr-only" for="login">Usuário</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </div>
+                        <input id="email" type="text" class="form-control" placeholder="Digite seu email de usuário">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label class="sr-only" for="senha">Senha</label>
+                    <div class="input-group">
+                        <div class="input-group-addon">
+                            <span class="glyphicon glyphicon-lock"></span>
+                        </div>
+                        <input id="senha" type="password" class="form-control" placeholder="Digite sua senha">
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <a onclick="autenticar()" class="btn btn-success form-control">Entrar</a>
+                </div>
+
+                <div class="form-group">
+                    Não é registrado?
+                    <a href="cadastroUsuario.html">Crie uma conta</a>
+
+                      <h5 span id="mensagemError" >usuário ou senha incorreto!</span></h5>  
+                </div>
+
+            </form>
+        </div>
+
+    </div>
+    <script src="./js/jquery-3.2.1.min.js"></script>
+    <script src="js/scriptLogin.js"></script>
+
+</body>
+
+</html>
